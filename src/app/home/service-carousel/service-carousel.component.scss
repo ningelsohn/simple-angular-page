@@ -1,0 +1,36 @@
+@use "src/styles/index" as *;
+
+.services,
+.carousel,
+.carousel-inner {
+
+    $min-services-height: 36em;
+
+    height: 100%;
+    min-height: $min-services-height;
+
+    :hover {
+        cursor: pointer;
+    }
+
+    .carousel-item,
+    .carousel-item img {
+        height: 100%;
+        min-height: $min-services-height;
+        object-fit: cover;
+    }
+
+    /* extends bootstrap class */
+    .carousel-control-prev,
+    .carousel-control-next {
+
+        /* Adjustments
+        *
+        *  -> shifts controls further to the sides
+        *  -> not anymore clickable on full height (increase focus on the slide itself)
+        */
+        height: 26%;
+        top: 30%;
+        width: 86px;
+    }
+}

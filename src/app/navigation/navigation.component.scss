@@ -1,0 +1,180 @@
+@use "src/styles/index" as *;
+@use 'src/styles/colors' as *;
+
+.navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    transition: .4s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #484848;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* When navigation is clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* State when navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -10px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 10px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler .toggler-icon {
+    background: $primary-gradient;
+}
+
+/* extends bootstrap class */
+.navbar-brand {
+
+    font-weight: 900;
+    font-size: 1.5em;
+    padding: 0 1em;
+
+    color: $primary-blue;
+
+    // Navbar is clickable -> pointer
+    cursor: pointer;
+
+    // Not selectable as text/element
+    user-select: none;
+}
+
+@include md {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        // top: 95%; 
+    }
+}
+
+.nav-item {
+    margin: 0em 0.5em;
+    font-weight: $fw-light;
+    text-transform: uppercase;
+    transition: 0.15s ease-in-out;
+    // border-radius: 8px;
+}
+
+/* Hover underline animation */
+
+@include lg {
+
+    .hover-underline-animation {
+
+        display: inline-block;
+        position: relative;
+        color: $primary-gradient;
+    }
+
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: $primary-gradient;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+
+    }
+
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .hover-underline-animation.active:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+
+
+    /* attempt to make vertical line animation */
+    // .hover-sideline-animation {
+
+    //     display: inline-block;
+    //     position: relative;
+    //     color: $primary-gradient;
+    // }
+
+    // .hover-sideline-animation:after {
+    //     content: '';
+    //     position: absolute;
+    //     height: 100%;
+    //     transform: scaleX(0);
+    //     height: 2px;
+    //     bottom: 0;
+    //     left: 0;
+    //     background: $primary-gradient;
+    //     transform-origin: bottom right;
+    //     transition: transform 0.25s ease-out;
+    // }
+
+    // .hover-sideline-animation:hover:after {
+    //     transform: scaleX(1);
+    //     transform-origin: top right;
+    // }
+}

@@ -1,0 +1,192 @@
+@use "src/styles/index" as *;
+
+// Contact Box
+.box-inner {
+
+    &.contact {
+        // background
+        background: url('/../assets/graphics/bluegradient.svg');
+        background-size: cover;
+    }
+
+    &.services {
+        // background
+        background: url('/../assets/graphics/graygradient.svg');
+        background-size: cover;
+    }
+    
+
+    // font
+    text-align: center;
+    
+    // spacing
+    padding: 5em 3em;
+    
+    .content {
+        color: $white;
+        max-width: 24em;
+    }
+
+    .title {
+        font-size: $fs-l;
+        font-weight: $fw-thick;
+    }
+
+    .info {
+        font-size: $fs-s;
+        font-weight: $fw-medium;
+        padding: 1em 0;
+    }
+    
+    .contact-btn {
+        
+        $contact-btn-color: $white;
+
+        padding: 0.6em 0em;
+        width: 8em;
+        // background: rgb($white, 0.9);
+        background: none;
+
+        border: 1px solid $contact-btn-color;
+        color: $contact-btn-color;
+
+        transition: 200ms;
+        
+        a {
+            color: $contact-btn-color;
+            text-decoration: none;
+            padding-left: 0.5em;
+        }
+
+        &:hover {
+            background: rgb($white, 0.2);
+        }
+
+    }
+    
+    .copy-icon {
+
+        color: $white;
+        font-size: $fs-s;
+        padding: 0.5em;
+
+        opacity: 0.6;
+
+        transition: 300ms;
+
+        &:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+
+    .btn-phone {
+        @include btn-fa-icon-before('\f095');
+    }
+
+    .btn-mobile {
+        @include btn-fa-icon-before('\f3ce');
+    }
+
+    .btn-mail {
+        @include btn-fa-icon-before('\f0e0');
+    }
+}
+
+// Contact Details Box
+.contact-details {
+    
+    padding: 4em 0;
+
+    // background: url('/../assets/img/fluids.jpg');
+    background: $white;
+    background-size: cover;
+    background-position: center;
+
+    .cd-title {
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    .cd-section {
+        text-align: start;
+        color: $black;
+    }
+
+    .contact-info {
+
+        padding: 0.3em 0;
+        color: $black;
+    
+        .ci-icon {
+            padding-right: 1.2em;
+        }
+    
+        a {
+            color: $black;
+        }
+    }
+}
+
+// Service Image Box
+.service-img {
+
+    height: 24em;
+    overflow: hidden;
+    filter: saturate(10) contrast(1) brightness(0.9) grayscale(1);
+    
+    
+    img {
+        text-align: left;
+        object-fit: cover;
+        // object-position: right;
+
+        left: 20em;
+        right: 0em;
+        
+        max-height: 100%;
+        min-width: 100%;
+    }
+
+    @include md {
+        height: 100%;
+    }
+
+}
+
+// .title {
+//     margin-top: 0.6em;
+//     font-size: $fs-m;
+//     font-weight: $fw-medium;
+// }
+
+.text-box {
+
+    font-weight: $fw-light;
+
+    @include lg {
+        width: 70%;
+    }
+}
+
+@keyframes bg-glow {
+
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+    
+}
+
+@keyframes bg-wiggle {
+    from {
+        background-position: left bottom;
+    }
+    to {
+        background-position: right bottom;
+    }
+}
+

@@ -1,0 +1,83 @@
+@use './colors' as *;
+
+.btn-primary {
+    background-color: $primary-blue;
+    border-color: $primary-blue;
+    font-weight: 550;
+}
+
+.pill-btn {
+    border-radius: 1.5em;
+    color: $black;
+    padding: 0.7em 1.4em;
+    font-size: 1.05em;
+    font-weight: 600;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    &:disabled {
+        cursor: default;
+        filter: brightness(90%);
+    }
+}
+
+.outline-btn {
+
+    // spacing
+    padding: 0.7em 1.4em;
+
+    // bg
+    background: none;
+
+    // color
+    color: $white;
+    border: 1px solid $white;
+
+    transition: 200ms;
+
+    &:hover {
+        background: rgb($white, 0.2);
+    }
+}
+
+.btn-chevron {
+    &:after {
+        font-family: 'Font Awesome 6 Free';
+        content: '\f054';
+        padding-left: 5px;
+        position: relative;
+        font-size: 90%;
+    }
+}
+
+@mixin btn-fa-icon-after($unicode) {
+    &:after {
+        font-family: 'Font Awesome 6 Free';
+        content: $unicode;
+        padding-left: 5px;
+        position: relative;
+        font-size: 90%;
+    }
+}
+
+@mixin btn-fa-icon-before($unicode) {
+    &:before {
+        font-family: 'Font Awesome 6 Free';
+        content: $unicode;
+        padding-left: 5px;
+        position: relative;
+        font-size: 90%;
+    }
+}
+
+// TODO deprecated
+.chevron-button {
+
+    background: red;
+
+}
+

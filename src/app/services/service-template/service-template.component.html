@@ -1,0 +1,69 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+    <!-- OUTER -->
+    <div class="outer-base-layout">
+
+        <!-- INNER FLEX -->
+        <div class="inner-base-layout flex y-flex">
+
+            <!-- ROW -->
+            <div class="bl-row flex x-flex">
+
+                <!-- SERVICE IMAGE BOX -->
+                <div class="bl-box">
+                    <div class="service-img">
+                        <img [src]="service.img" alt="Service Image">
+                    </div>
+                </div>
+                <!-- SERVICE IMAGE BOX -->
+
+                <!-- SERVICE INTRO BOX -->
+                <div class="bl-box flex y-flex f-align-center">
+                    <div class="intro">
+                        <h1 class="welcome-title">{{ text(service.title) }}</h1>
+                        <p class="welcome-text">{{ text(service.desc) }}</p>
+                        <button routerLink="/contact" class="pill-btn btn-chevron">{{ text('contact.title') }}</button>
+                    </div>
+                </div>
+                <!-- SERVICE INTRO BOX -->
+
+            </div>
+            <!-- ROW -->
+
+            <!-- ITEMS -->
+            <div class="items flex y-flex">
+
+                <!-- SERVICE ITEMS -->
+                <div class="item" *ngFor="let item of service.items;">
+                    <div class="content flex x-flex">
+                        <div class="icon-blob">
+                            <i class="icon {{item.icon}}"></i>
+                        </div>
+                        <div class="text">
+                            <h1 class="title fs-m fw-thick">{{ text(item.title) }}</h1>
+                            <p class="text fs-s fw-thin">{{ text(item.desc) }}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICE ITEMS -->
+
+                <!-- CONTACT ITEM -->
+                <div class="item">
+                    <div class="content contact-item flex y-flex f-align-center">
+                        <h1 class="title fs-m fw-thick">{{ text('contact.question') }}</h1>
+                        <button routerLink="/contact" class="pill-btn outline-btn btn-chevron cta-btn">{{ text('contact.get-in-touch') }}</button>
+                    </div>
+                </div>
+                <!-- CONTACT ITEM -->
+
+            </div>
+            <!-- ITEMS -->
+
+        </div>
+        <!-- INNER FLEX -->
+
+    </div>
+    <!-- OUTER -->
+
+</ng-container>

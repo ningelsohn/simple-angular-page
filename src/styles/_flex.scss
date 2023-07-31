@@ -1,0 +1,139 @@
+@use "./variables";
+@use './spacing';
+@use './colors';
+@use './breakpoints' as *;
+
+/* flex */
+
+.flex {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.y-flex {
+
+    @extend .flex;
+    flex-direction: column;
+
+    .split-last {
+        margin-top: auto;
+    }
+
+}
+
+.sm-y-flex {
+    @include sm {
+        flex-direction: column;
+    }
+}
+
+.md-y-flex {
+    @include md {
+        flex-direction: column;
+    }
+}
+
+.lg-y-flex {
+    @include lg {
+        flex-direction: column;
+    }
+}
+
+.xl-y-flex {
+    @include xl {
+        flex-direction: column;
+    }
+}
+
+.x-flex {
+
+    @extend .flex;
+    flex-direction: row;
+
+    .split-last {
+        margin-left: auto;
+    }
+}
+
+.x-flex-md-rev {
+    @include md {
+        flex-direction: row-reverse;
+    }
+}
+
+.sm-x-flex {
+    @include sm {
+        flex-direction: row;
+    }
+}
+
+.md-x-flex {
+    @include md {
+        flex-direction: row;
+    }
+}
+
+.lg-x-flex {
+    @include lg {
+        flex-direction: row;
+    }
+}
+
+.xl-x-flex {
+    @include xl {
+        flex-direction: row;
+    }
+}
+
+.f-align-center {
+    align-items: center;
+}
+
+.f-align-start {
+    align-items: flex-start;
+}
+
+.f-align-end {
+    align-items: flex-end;
+}
+
+.f-justify-center {
+    justify-content: center;
+}
+
+.f-justify-start {
+    justify-content: flex-start;
+}
+
+.f-justify-end {
+    justify-content: flex-end;
+}
+
+
+/* flex item */
+
+.flex-item {
+
+    width: 100%;
+
+}
+
+.full-width {
+
+    width: 100%;
+
+}
+
+/* gap classes for spacing between flex items */
+
+@for $i from 1 through variables.$max-level {
+    .gap-#{$i} {
+
+        gap: calc(#{$i} * #{variables.$unit})
+
+    }
+}

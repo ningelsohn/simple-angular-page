@@ -1,0 +1,14 @@
+<ng-container *transloco="let text;">
+    <div class="flex y-flex f-align-start">
+        <h4 class="title"><span class="light">{{ text('services.overview') }}</span>  ·  {{ text(service.title) }}</h4>
+        <div class="items flex y-flex f-align-start">
+            <div class="item flex x-flex f-align-center f-justify-start" *ngFor="let item of service.items;">
+                <i class="fa fa-circle-check icon"></i>  
+                <p class="fs-s fw-medium w-80">{{ text(item.title) }}</p>
+            </div>
+        </div>
+        <button class="pill-btn btn-chevron">
+            {{ text('services.learn-more') }}
+        </button>
+    </div>
+</ng-container>

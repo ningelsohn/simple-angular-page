@@ -1,0 +1,102 @@
+/* Font */
+
+@font-face {
+    font-family: "Lobster";
+    src: url('../assets/fonts/Lobster/Lobster-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../assets/fonts/Lobster/Lobster-Regular.woff2') format('woff2');
+    src: url('../assets/fonts/Lobster/Lobster-Regular.ttf') format(truetype);
+} 
+
+
+/* Font sizes */
+
+$fs-xs: 1.0em;
+$fs-s: 1.2em;
+$fs-m: 1.6em;
+$fs-ml: 2.3em;
+$fs-l: 2.8em;
+$fs-xl: 3.5em;
+
+
+/* Font size classes */
+
+.fs-xs {
+    font-size: $fs-xs;
+}
+
+.fs-s {
+    font-size: $fs-s;
+}
+
+.fs-m {
+    font-size: $fs-m;
+}
+
+.fs-l {
+    font-size: $fs-l;
+}
+
+.fs-xl {
+    font-size: $fs-xl;
+}
+
+
+/* Font weighs */
+
+$fw-thin: 300;
+$fw-light: 400;
+$fw-lighter: 500;
+$fw-medium: 600;
+$fw-thicker: 700;
+$fw-thick: 800;
+
+
+/* Font weigh classes */
+
+.fw-thin {
+    font-weight: 200;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-lighter {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-thicker {
+    font-weight: 600;
+}
+
+.fw-thick {
+    font-weight: 700;
+}
+
+/* Other font stuff */
+
+.large-title {
+    font-weight: $fw-thick;
+    font-size: $fs-xl;
+}
+
+.medium-title {
+    font-weight: $fw-thick;
+    font-size: 2.0em;
+}
+
+.small-title {
+    font-weight: $fw-lighter;
+    font-size: 1.5em;
+}
+
+@mixin text-gradient($gradient) {
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

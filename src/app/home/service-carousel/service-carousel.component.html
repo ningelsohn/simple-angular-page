@@ -1,0 +1,57 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+    <!-- CAROUSEL -->
+    <div id="servicesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        
+        <!-- CAROUSEL INNER -->
+        <div class="carousel-inner">
+
+            <!-- ABOUT ME SLIDE -->
+            <app-carousel-slide 
+                title="{{ text('services.service-1.title') }}" 
+                shortInfo="{{ text('services.service-1.short-info') }}" 
+                imgPath="assets/img/handshake.jpg"
+                route="/about-me"
+                [active]="true">
+            </app-carousel-slide>
+            <!-- ABOUT ME SLIDE -->
+
+            <!-- SKILLS SLIDE -->
+            <app-carousel-slide 
+                title="{{ text('services.service-2.title') }}" 
+                shortInfo="{{ text('services.service-2.short-info') }}" 
+                imgPath="assets/img/coding.jpg"
+                route="/skills">
+            </app-carousel-slide>
+            <!-- SKILLS SLIDE -->
+
+            <!-- HOBBYS SLIDE -->
+            <app-carousel-slide 
+                title="{{ text('services.service-3.title') }}" 
+                shortInfo="{{ text('services.service-3.short-info') }}" 
+                imgPath="assets/img/bikepacking.jpg"
+                route="/hobbies">
+            </app-carousel-slide>
+            <!-- HOBBYS SLIDE -->
+
+        </div>
+        <!-- CAROUSEL INNER -->
+
+        <!-- CAROUSEL CONTROLS | PREV/NEXT -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
+            data-bs-slide="next" #next>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- CAROUSEL CONTROLS | PREV/NEXT -->
+
+    </div>
+    <!-- CAROUSEL -->
+
+</ng-container>

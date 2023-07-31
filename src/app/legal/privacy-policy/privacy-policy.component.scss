@@ -1,0 +1,53 @@
+@use "src/styles/index" as *;
+
+.outer {
+    margin: 1.5em;
+    
+    @include sm {
+        margin-left: 5em;
+        width: 80%;
+    }
+
+    @include lg {
+        width: 50%;
+    }
+}
+
+.inner {
+    gap: 3em;
+}
+
+.section {
+    padding-top: 4em;
+}
+
+td {
+    padding-right: 0.5em;
+}
+
+.contact-info {
+
+    padding: 0.1em 0;
+    margin: 0;
+
+    a {
+        color: $black;
+        padding-left: 0.2em;
+    }
+}
+
+.block-text {
+    text-align: justify;
+}
+
+.download {
+
+    a {
+        color: $black;
+    }
+}
+
+.whitespace {
+    display: block;
+    height: 50vh;
+}

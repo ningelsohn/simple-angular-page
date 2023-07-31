@@ -1,0 +1,66 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+    <!-- LEGAL NOTICE OUTER -->
+    <div class="outer">
+
+        <!-- LEGAL NOTICE INNER -->
+        <div class="inner y-flex f-align-start">
+
+            <!-- LEGAL NOTICE / IMPRESSUM -->
+            <div id="legal-notice" class="section y-flex f-align-start">
+
+                <div class="medium-title">{{ text('legal.legal-notice.name') }}</div>
+
+                <div class="fs-s fw-lighter">{{ text('legal.legal-notice.telemedia-info') }}</div>
+
+                <!-- ADDRESS -->
+                <div class="fs-xs fw-medium">
+                    <div class="">{{ text('legal.legal-notice.street-number') }}</div>
+                    <div class="">{{ text('legal.legal-notice.zip-city') }}</div>
+                    <div class="">{{ text('legal.legal-notice.country') }}</div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="fs-xs">
+                    <p class="contact-info"><i class="fas fa-phone fa-fw"></i> <a href="{{ 'tel:' + phone }}">{{ phone }}</a></p>
+                    <p class="contact-info"><i class="fas fa-mobile fa-fw"></i> <a href="{{ 'tel:' + mobile }}">{{ mobile }}</a></p>
+                    <p class="contact-info"><i class="fas fa-envelope fa-fw"></i> <a href="{{ 'mailto:' + email }}">{{ email }}</a></p>
+                </div>
+
+                <!-- REPRESENTED BY -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.represented-by-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.represented-by-value') }}</div>
+                </div>
+                
+                <!-- COURT REGISTRATION -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.court-registration-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.court-registration-value') }}</div>
+                </div>
+
+                <!-- REGISTER NO -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.register-no-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.register-no-value') }}</div>
+                </div>
+                
+                <!-- TAX ID -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.tax-id-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.tax-id-value') }}</div>
+                </div>
+                
+            </div>
+            <!-- LEGAL NOTICE -->
+
+            <div class="whitespace"></div>
+            
+        </div>
+        <!-- LEGAL NOTICE INNER -->
+
+    </div>
+    <!-- LEGAL NOTICE OUTER -->
+
+</ng-container>

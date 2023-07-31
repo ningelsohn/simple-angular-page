@@ -1,0 +1,281 @@
+@use "src/styles/index" as *;
+
+// User Intro Box
+.intro {
+
+    // bg
+    background: url('/../assets/img/concrete.jpg');
+    background-size: cover;
+
+    // spacing
+    padding: 3.5em;
+
+    // other
+    cursor: pointer;
+
+    .content {
+
+        // size
+        max-width: 28em;
+
+
+        .welcome-title {
+
+            // font
+            font-size: $fs-l;
+            line-height: 1.1em;
+            font-weight: $fw-thick;
+
+            // spacing
+            padding-bottom: 0.2em;
+            
+            .special-font {
+
+                // font
+                font-family: 'Lobster', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: $fs-s;
+                line-height: 0em;
+                @include text-gradient($primary-gradient);
+
+                // spacing 
+                padding-left: 1%; // fixes cut off font
+            }
+        }
+
+        .welcome-text {
+
+            // font
+            font-size: 1.2em;
+            font-weight: $fw-medium;
+
+            // size
+            max-width: 50em;
+        }
+
+        .pill-btn {
+
+            // font
+            color: $white;
+
+            // bg
+            // Very bad performance - problems occur only on the first slide of carousel, safari 
+            background: linear-gradient(90deg, $primary-gradient-color-1 0%, $primary-gradient-color-2 50%, $primary-gradient-color-1 100%);
+            background-size: 200%;
+            animation: bg-glow 2s ease-out infinite;
+            // 'Null-Transform-Hack' solves performance Problem 
+            // https://stackoverflow.com/questions/13176746/css-keyframe-animation-cpu-usage-is-high-should-it-be-this-way
+            transform: translateZ(0);
+
+            &:hover {
+
+                // bg
+                animation: bg-glow 1s ease-out infinite; // Faster animation on hover
+            }
+        }
+    }
+}
+
+// Services Box
+.services {
+
+    // size
+    min-height: 36em;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+// Products Box
+.products {
+
+    // spacing
+    padding: 3em;
+
+    // bg
+    background: url('/../assets/graphics/graywave.svg');
+    background-size: cover;
+
+    animation: bg-wiggle 15s ease-in-out infinite alternate;
+
+    // font
+    text-align: center;
+
+    cursor: pointer;
+
+    .content {
+        
+        // size
+        max-width: 36em;
+
+        padding: 3em 0;
+    }
+
+    .large-title {
+        
+        // font
+        line-height: 1em;
+        @include text-gradient($secondary-gradient);
+
+        font-size: $fs-l;
+    }
+
+    .products-intro {
+
+        // font
+        color: rgb($white, 0.95);
+
+        // spacing
+        padding: 2em 0;
+    }
+}
+
+// About Boxes | History & Philosophy
+.about {
+
+    // font
+    text-align: left;
+    line-height: 1.5em;
+
+    // spacing
+    padding: 5em 3em;
+
+    // background
+    &.history {
+        background: url('/../assets/img/books.jpg');
+        background-size: cover;
+    }
+
+    &.philosophy {
+        background: url('/../assets/img/structure.jpg');
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .content {
+        max-width: 26em;
+        color: rgb($black, 0.8);
+    }
+
+    .title {
+        font-size: $fs-m;
+        font-weight: $fw-thick;
+        text-transform: uppercase;
+
+        .light {
+            font-weight: 100;
+        }
+    }
+
+    .desc {
+        font-size: $fs-s;
+        font-weight: $fw-lighter;
+    }
+
+}
+
+// Contact Box
+.contact {
+
+    // background
+    background: url('/../assets/graphics/bluegradient.svg');
+    background-size: cover;
+
+    // font
+    text-align: center;
+    
+    // spacing
+    padding: 5em 3em;
+    
+    .content {
+        color: $white;
+        max-width: 24em;
+    }
+
+    .title {
+        font-size: $fs-l;
+        font-weight: $fw-thick;
+    }
+
+    .info {
+        font-size: $fs-s;
+        font-weight: $fw-medium;
+        padding: 1em 0;
+    }
+    
+    .outline-btn {
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+    }
+    
+    .copy-icon {
+
+        color: $white;
+        font-size: $fs-s;
+        padding: 0.5em;
+
+        opacity: 0.6;
+
+        transition: 300ms;
+
+        &:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+
+    .btn-phone {
+        @include btn-fa-icon-before('\f095');
+    }
+
+    .btn-mobile {
+        @include btn-fa-icon-before('\f3ce');
+    }
+
+    .btn-mail {
+        @include btn-fa-icon-before('\f0e0');
+    }
+}
+
+.title {
+    margin-top: 0.6em;
+    font-size: $fs-m;
+    font-weight: $fw-medium;
+}
+
+.text-box {
+    // text-align: justify;
+    // font-size: 90% $fs-s;
+    // font-size: $fs-xs;
+    font-weight: $fw-light;
+
+    @include lg {
+        width: 70%;
+    }
+}
+
+@keyframes bg-glow {
+
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+    
+}
+
+@keyframes bg-wiggle {
+    from {
+        background-position: left bottom;
+    }
+    to {
+        background-position: right bottom;
+    }
+}

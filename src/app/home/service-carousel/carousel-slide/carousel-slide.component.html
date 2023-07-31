@@ -1,0 +1,25 @@
+<!-- CAROUSEL ITEM -->
+<div class="carousel-item" [ngClass]="{'active' : active}" [routerLink]="route">
+
+    <!-- IMG -->
+    <img [src]="imgPath" class="d-block w-100" alt="background-image">
+
+    <!-- CAROUSEL CAPTION -->
+    <div class="carousel-caption d-md-block">
+        <div class="flex x-flex f-align-end caption-content-outer">
+            <div class="flex y-flex f-align-center caption-content-inner">
+                <div class="box-item fs-s fw-medium flex y-flex f-align-center">
+                    <span class="box-item-text">
+                        {{ shortInfo }}
+                    </span>
+                    <button class="pill-btn outline-btn btn-chevron">
+                        {{ title }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CAROUSEL CAPTION -->
+
+</div>
+<!-- CAROUSEL ITEM -->

@@ -1,0 +1,116 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+    <!-- LEGAL OUTER -->
+    <div class="outer">
+
+        <!-- LEGAL INNER -->
+        <div class="inner flex y-flex f-align-start">
+
+            <!-- LEGAL NOTICE / IMPRESSUM -->
+            <div id="legal-notice" class="section y-flex f-align-start">
+
+                <div class="medium-title">{{ text('legal.legal-notice.name') }}</div>
+
+                <div class="fs-s fw-lighter">{{ text('legal.legal-notice.telemedia-info') }}</div>
+
+                <!-- ADDRESS -->
+                <div class="fs-xs fw-medium">
+                    <div>Example Corporation</div>
+                    <div>{{ text('legal.legal-notice.street-number') }}</div>
+                    <div>{{ text('legal.legal-notice.zip-city') }}</div>
+                    <div>{{ text('legal.legal-notice.country') }}</div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="fs-xs">
+                    <p class="contact-info"><i class="fas fa-phone fa-fw"></i> <a href="{{ 'tel:' + phone }}">{{ phone }}</a></p>
+                    <p class="contact-info"><i class="fas fa-mobile fa-fw"></i> <a href="{{ 'tel:' + mobile }}">{{ mobile }}</a></p>
+                    <p class="contact-info"><i class="fas fa-envelope fa-fw"></i> <a href="{{ 'mailto:' + email }}">{{ email }}</a></p>
+                </div>
+
+                <!-- REPRESENTED BY -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.represented-by-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.represented-by-value') }}</div>
+                </div>
+
+                <!-- REGISTER NO -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.register-no-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.court-registration-value') }} {{ text('legal.legal-notice.register-no-value') }} </div>
+                </div>
+                
+                <!-- TAX ID -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.tax-id-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.tax-id-value') }}</div>
+                </div>
+
+                <!-- IS RESPONSIBLE -->
+                <div class="fs-xs">
+                    <div class="fw-lighter">{{ text('legal.legal-notice.responsible-key') }}</div>
+                    <div class="fw-medium">{{ text('legal.legal-notice.responsible-value') }}</div>
+                    <div>Example Corporation</div>
+                    <div>{{ text('legal.legal-notice.street-number') }}</div>
+                    <div>{{ text('legal.legal-notice.zip-city') }}</div>
+                    <div>{{ text('legal.legal-notice.country') }}</div>
+                </div>
+            </div>
+            <!-- LEGAL NOTICE -->
+
+            <!-- CONTENT LIABILITY -->
+            <div id="content-liability" class="section y-flex f-align-start">
+                <div class="medium-title">{{ text('legal.content-liability.name') }}</div>
+                <div class="fs-s fw-lighter">{{ text('legal.content-liability.desc') }}</div>
+            </div>
+            <!-- CONTENT LIABILITY -->
+
+            <!-- COPYRIGHT -->
+            <div id="copyright" class="section y-flex f-align-start">
+                <div class="medium-title">{{ text('legal.copyright.name') }}</div>
+                <div class="fs-s fw-lighter">{{ text('legal.copyright.desc') }}</div>
+            </div>
+            <!-- COPYRIGHT -->
+
+            <!-- IMAGES -->
+            <div id="images" class="section y-flex f-align-start">
+                <div class="medium-title">{{ text('legal.images.name') }}</div>
+                <div class="fs-s fw-lighter">{{ text('legal.images.desc') }}</div>
+            </div>
+            <!-- IMAGES -->
+
+            <!-- PRIVACY POLICY -->
+            <div id="privacy-policy" class="section y-flex f-align-start">
+                <div class="medium-title">{{ text('legal.privacy-policy.name') }}</div>
+
+                <ul>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-1') }}</li>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-2') }}</li>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-3') }}</li>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-4') }}</li>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-5') }}</li>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-6') }}</li>
+                    <li class="fw-thin">{{ text('legal.privacy-policy.desc-7') }}</li>
+                </ul>
+
+            </div>
+            <!-- PRIVACY POLICY -->
+
+            <!-- TERMS AND CONDITIONS -->
+            <div id="terms-and-conditions" class="section y-flex f-align-start" name="terms-and-conditions">
+                <div class="medium-title">{{ text('legal.terms-and-conditions.name') }}</div>
+                <div class="fw-lighter">{{ text('legal.terms-and-conditions.info') }}</div>
+                <div class="download"><a href="assets/pdf/gtc.pdf" download>{{ text('legal.terms-and-conditions.download-pdf') }}</a></div>
+            </div>
+            <!-- TERMS AND CONDITIONS -->
+
+            <div class="whitespace"></div>
+
+        </div>
+        <!-- LEGAL INNER -->
+
+    </div>
+    <!-- LEGAL OUTER -->
+
+</ng-container>

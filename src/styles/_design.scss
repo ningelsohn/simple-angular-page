@@ -1,0 +1,22 @@
+@use "./colors" as *;
+
+.icon-bubble {
+
+    // Flex
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Size and spacing
+    font-size: 2em;
+    padding: 1em;
+    
+    // Icon color
+    color: whitesmoke;
+
+    // Gradieng bg
+    background: $primary-gradient;
+
+    // Cicular bg
+    clip-path: circle(45% at 50% 50%);
+}

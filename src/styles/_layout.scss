@@ -1,0 +1,48 @@
+@use "./breakpoints" as *;
+
+.outer-base-layout {
+
+    // size
+    width: 100%;
+
+    .inner-base-layout {
+
+        // spacing
+        gap: 0em;
+
+        .bl-row {
+
+            // size
+            width: 100%;
+
+            // spacing
+            gap: 0em;
+        }
+
+        // Standardized Box Class
+        .bl-box {
+
+            // size
+            width: 100%;
+
+            // spacing
+            padding: 0;
+
+
+            // Display two boxes next to each other when certain width is reached
+            @include md {
+
+                // size  
+                width: calc(100% / 2);
+                height: 40em;
+            }
+
+            .box-inner {
+                
+                // size
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

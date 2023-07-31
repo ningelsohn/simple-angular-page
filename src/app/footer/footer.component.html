@@ -1,0 +1,79 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+  <!-- FOOTER -->
+  <footer class="footer text-center text-lg-start text-dark">
+  
+    <!-- SECTION: LINKS  -->
+    <section class="d-flex">
+      <div class="container text-center text-md-start mt-5">
+
+        <!-- GRID ROW -->
+        <div class="row mt-3">
+  
+          <!-- GRID COLUMN -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- LINKS -->
+            <h6 class="text-uppercase fw-bold">{{ text('footer.corp.name') }}</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a routerLink="/" class="text-dark">{{ text('footer.corp.home') }}</a>
+            </p>
+            <p>
+              <a routerLink="/contact" class="text-dark">{{ text('footer.corp.contact') }}</a>
+            </p>
+            <p>
+              <a routerLink="/legal" class="text-dark">{{ text('footer.corp.legal') }}</a>
+            </p>
+          </div>
+          <!-- GRID COLUMN -->
+
+          <!-- GRID COLUMN -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- LINKS -->
+            <h6 class="text-uppercase fw-bold">{{ text('footer.services.name') }}</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a routerLink="/about-me" class="text-dark">{{ text('footer.services.service-1') }}</a>
+            </p>
+            <p>
+              <a routerLink="/skills" class="text-dark">{{ text('footer.services.service-2') }}</a>
+            </p>
+            <p>
+              <a routerLink="/hobbys" class="text-dark">{{ text('footer.services.service-3') }}</a>
+            </p>
+          </div>
+          <!-- GRID COLUMN -->
+  
+          <!-- GRID COLUMN -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <!-- LINKS -->
+            <h6 class="text-uppercase fw-bold">{{ text('footer.contact.name') }}</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p class="contact-info"><i class="contact-icon fas fa-phone fa-fw mr-3"></i> <a href="{{ 'tel:' + phone }}">{{ phone }}</a></p>
+            <p class="contact-info"><i class="contact-icon fas fa-mobile fa-fw mr-3"></i> <a href="{{ 'tel:' + mobile }}">{{ mobile }}</a></p>
+            <p class="contact-info"><i class="contact-icon fas fa-envelope fa-fw mr-3"></i> <a href="{{ 'mailto:' + email }}">{{ email }}</a></p>
+          </div>
+          <!-- GRID COLUMN -->
+
+        </div>
+        <!-- GRID ROW -->
+
+      </div>
+    </section>
+    <!-- SECTION: LINKS  -->
+  
+    <!-- COPYRIGHT -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-dark" href="#!">Example Website</a>
+    </div>
+    <!-- COPYRIGHT -->
+
+  </footer>
+  <!-- FOOTER -->
+
+</ng-container>

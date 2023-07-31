@@ -1,0 +1,218 @@
+{
+    "navigation": {
+
+        "services": "Services",
+        "service-1": "About Me",
+        "service-2": "Skills",
+        "service-3": "Hobbys",
+        "contact": "Contact"
+
+    },
+
+    "welcome": {
+        "welcome-title-leading": "This is only a ",
+        "welcome-title-highlight": "sample of work",
+        "welcome-title-trailing": " .",
+        "welcome-text": "As a graduate of a computer science programme, I am now looking for a job. As proof of my skills, take a look at this website, which I designed and developed."
+    },
+    
+    "footer": {
+
+        "corp": {
+
+            "name": "Exmaple.",
+            "legal": "Legal Notice / Terms and Conditions",
+            "contact": "Contact",
+            "home": "Home"
+
+        },
+
+        "services": {
+            "name": "services",
+            "service-1": "About Me",
+            "service-2": "Skills",
+            "service-3": "Hobbys"
+        },
+
+        "legal": {
+
+            "name": "legal",
+            "legal-notice": "Legal Notice",
+            "privacy-policy": "Privacy Policy",
+            "terms-and-conditions": "General Terms and Conditions"
+
+        },
+
+        "contact": {
+
+            "name": "Contact"
+
+        }
+
+    },
+
+    "services": {
+
+        "title": "Services",
+        "questions": "Questions about me?",
+        "questions-desc": "Find your answer on the following pages.",
+        "overview": "overview",
+        "learn-more": "Learn more",
+
+        "service-1": {
+
+            "title": "About Me",
+            "short-info": "Who I am, where I'm from, what I like",
+            "desc": "You want a few infos about me? Let me introduce myself!",
+
+            "info-1": {
+                "title": "Jan Ningelgen",
+                "desc": "Thats my name. Suspendisse bibendum, sapien vel aliquet luctus, odio mauris tempor ipsum, ac tincidunt dolor risus vel odio. Nulla facilisi. Sed nec velit nec sapien interdum tempus. Quisque dapibus lorem non dui cursus. Curabitur eget dolor elit."
+            },
+            "info-2": {
+                "title": "27 years",
+                "desc": "Thats my age. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ipsum vel ex accumsan posuere. Nulla facilisi. Suspendisse bibendum, sapien vel aliquet luctus, odio mauris tempor ipsum, ac tincidunt dolor risus vel odio. Nulla facilisi. Sed nec velit nec sapien interdum tempus. Quisque dapibus lorem non dui cursus, sit amet tempus elit suscipit."
+            },
+            "info-3": {
+                "title": "Frankfurt, Germany",
+                "desc": "Thats where I live. Suspendisse bibendum, sapien vel aliquet luctus, odio mauris tempor ipsum, ac tincidunt dolor risus vel odio. Nulla facilisi. Sed nec velit nec sapien interdum tempus. Quisque dapibus lorem non dui cursus, sit amet tempus elit suscipit. Vestibulum nec nibh dui. Curabitur eget dolor elit."
+            },
+            "info-4": {
+                "title": "192 centimeters",
+                "desc": "Thats my height. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ipsum vel ex accumsan posuere. Nulla facilisi. Suspendisse bibendum, sapien vel aliquet luctus, odio mauris tempor ipsum, ac tincidunt dolor risus vel odio. Nulla facilisi. Sed nec velit nec sapien interdum tempus. Quisque dapibus lorem non dui cursus, sit amet tempus elit suscipit. Vestibulum nec nibh dui. Curabitur eget dolor elit."
+            }
+
+        },
+
+        "service-2": {
+
+            "title": "Skills",
+            "short-info": "Skills I have aquired during my studies and at work.",
+            "desc": "Look at my skills. Very impressive, huh? Phasellus sit amet venenatis turpis. Suspendisse potenti. Vivamus eu sagittis lorem, eget pellentesque odio. Ut elementum nisi eu pharetra dictum.",
+
+            "info-1": {
+                "title": "Java / SpringBoot",
+                "desc": "Java was one of the first things taught in my study programme. Since then, I have worked with various frameworks and acquired good knowledge, especially with SpringBoot."
+            },
+            "info-2": {
+                "title": "Angular / TypeScript",
+                "desc": "While Vue.js was the first high-level frontend-framework I worked with, I picked up Angular a while ago and got used to it quickly. Since then I used it for many projects and learned a lot."
+            },
+            "info-3": {
+                "title": "Python / Flask / PyTorch",
+                "desc": "Python was also taught as part of the course. The simplicity and flexibility of the language led me to work with it a lot. Among other things, in projects with microcontrollers with Micropython, for machine-learning with PyTorch or as a replacement for Springboot with Flask."
+            },
+            "info-4": {
+                "title": "Scrum / Agile Methologies",
+                "desc": "In the first major project of my studies, the basics of agile development were explained with scrum as an example. Since then, I have not known any other way of working in team projects."
+            },
+            "info-5": {
+                "title": "Git / Jenkins / Atlassian",
+                "desc": "Git is probably a given. But I am also familiar with technologies like Jenkins, Jira, Confluence and BitBucket."
+            }
+
+        },
+
+        "service-3": {
+
+            "title": "Hobbys",
+            "short-info": "How I use my freetime",
+            "desc": "Working on tech projects can be fun, but everyone needs some kind of balance.",
+
+            "info-1": {
+                "title": "Cycling / Bikepacking",
+                "desc": "I love cycling and prefer to use my gravel bike for multi-day bikepacking tours. With a tent and a gas cooker in my luggage, I explore Germany under my own steam."
+            },
+            "info-2": {
+                "title": "Tennis / Squash / Basketball",
+                "desc": "Without great ambitions, I like to play tennis and squash occasionally. With little success, I also like to play basketball in the summer."
+            },
+            "info-3": {
+                "title": "Guitar / Piano",
+                "desc": "Seit einigen Jahren lerne ich autodidaktisch das Gitarren und Klavier spielen. Da ich sehr unregelmäßig übe, ist mein Repertoire recht klein."
+            },
+            "info-4": {
+                "title": "Gaming",
+                "desc": "Being a software developer, gaming is of course also one of my hobbys. However, I usually prefer to be outside in nature."
+            }
+
+        }
+
+    },
+
+    "about": {
+        "us": "About us",
+        "history": {
+            "title": "Our history",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ipsum vel ex accumsan posuere. Nulla facilisi. Suspendisse bibendum, sapien vel aliquet luctus, odio mauris tempor ipsum, ac tincidunt dolor risus vel odio. Nulla facilisi. Sed nec velit nec sapien interdum tempus. Quisque dapibus lorem non dui cursus, sit amet tempus elit suscipit. Vestibulum nec nibh dui. Curabitur eget dolor elit."
+        },
+        "philosophy": {
+            "title": "Our philosophy",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ipsum vel ex accumsan posuere. Nulla facilisi. Suspendisse bibendum, sapien vel aliquet luctus, odio mauris tempor ipsum, ac tincidunt dolor risus vel odio. Nulla facilisi. Sed nec velit nec sapien interdum tempus. Quisque dapibus lorem non dui cursus, sit amet tempus elit suscipit. Vestibulum nec nibh dui. Curabitur eget dolor elit."
+        }
+    },
+    
+    "contact": {
+        "title": "Contact",
+        "us": "Contact us",
+        "get-in-touch": "Get in touch",
+        "question": "Interest aroused or questions arisen?",
+        "info": "Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.",
+        "mail-us": "Mail",
+        "call-us": "Call"
+        
+    },
+
+    "legal": {
+
+        "name": "legal",
+        "legal-notice": {
+            "name": "Legal Notice",
+            "telemedia-info": "According to German telemedia act §5:",
+            "street-number": "Example Street 42",
+            "zip-city": "000000 Example City",
+            "country": "Germany",
+            "responsible-key": "Responsible for the content according to § 55 para. 2 RStV:",
+            "responsible-value": "Person Name",
+            "represented-by-key": "Managing director:",
+            "represented-by-value": "Person Name",
+            "court-registration-key": "Court of registration:",
+            "court-registration-value": "Name of City Court",
+            "register-no-key": "Commercial register no.:",
+            "register-no-value": "000 000 000",
+            "tax-id-key": "Value-added tax ID number:",
+            "tax-id-value": "TAX ID NUMBER 000 000 000"
+        },
+        "content-liability": {
+            "name": "Content liability",
+            "desc": "Example Content liability section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper. Praesent eget ligula non neque accumsan consequat. Etiam eu purus cursus, malesuada libero a, euismod mauris."
+        },
+        "copyright": {
+            "name": "Copyright",
+            "desc": "Example Copyright Section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper. Praesent eget ligula non neque accumsan consequat. Etiam eu purus cursus, malesuada libero a, euismod mauris."
+        },
+        "images": {
+            "name": "Images & Graphics",
+            "desc": "Unplash"
+        },
+        "privacy-policy": {
+            "name": "Privacy Policy",
+            "personal-data-key": "Personal Data",
+            "personal-data-value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper. Praesent eget ligula non neque accumsan consequat. Etiam eu purus cursus, malesuada libero a, euismod mauris.",
+            "tracking-key": "Cookies and Tracking",
+            "tracking-value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper. Praesent eget ligula non neque accumsan consequat. Etiam eu purus cursus, malesuada libero a, euismod mauris.",
+            "desc-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper.",
+            "desc-2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper.",
+            "desc-3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper.",
+            "desc-4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper.",
+            "desc-5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper.",
+            "desc-6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper.",
+            "desc-7": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue vel lectus fermentum gravida. Suspendisse potenti. Duis nec suscipit justo, eu varius nunc. Suspendisse in ligula eu lectus consectetur viverra. Nullam accumsan consectetur neque, vel laoreet nunc facilisis vel. Vestibulum pharetra sapien nisl, eu auctor lectus pharetra nec. Cras sit amet sapien nec est euismod ullamcorper."
+        },
+        "terms-and-conditions": {
+            "name": "General Terms and Conditions",
+            "info": "The General Terms and Conditions (GTC) apply to the various services that we offers you:",
+            "download-pdf": "General Terms and Conditions (pdf)"
+        }
+    }
+}

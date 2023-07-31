@@ -1,0 +1,25 @@
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "~@fortawesome/fontawesome-free/css/solid.min.css";
+@import "~@fortawesome/fontawesome-free/css/brands.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    // font-family: 'Poppins';
+    //overflow-x: hidden;
+
+    top: 0;
+    margin-top: 0;
+
+    // offset body because of fixed navbar
+    padding-top: 28px;
+
+    cursor: default;
+
+}
+

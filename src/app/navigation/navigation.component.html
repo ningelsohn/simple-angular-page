@@ -1,0 +1,86 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+      <!-- BRAND | LOGO -->
+      <a 
+        class="navbar-brand navbar-center" 
+        routerLink="/home"
+        (click)="onNavItemClick()">
+        <!-- <img src="assets/graphics/logo.svg" width="128" height="32" alt=""> -->
+        EXAMPLE.
+      </a>
+
+      <!-- COLLAPSED BUTTON | BURGER MENU -->
+      <button 
+        class="navbar-toggler collapsed" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+        #toggleButton>
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+      
+      <!-- NAVBAR COLLAPSE -->
+      <div 
+        class="collapse navbar-collapse text-center" 
+        id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <!-- ABOUT ME -->
+          <li class="nav-item hover-underline-animation" routerLinkActive="active">
+            <a 
+              class="nav-link" 
+              routerLink="/about-me"
+              (click)="onNavItemClick()">
+              {{ text('navigation.service-1') }}
+            </a>
+          </li>
+
+          <!-- SKILLS -->
+          <li class="nav-item hover-underline-animation" routerLinkActive="active">
+            <a 
+              class="nav-link" 
+              routerLink="/skills"
+              (click)="onNavItemClick()">
+              {{ text('navigation.service-2') }}
+            </a>
+          </li>
+
+          <!-- HOBBYS -->
+          <li class="nav-item hover-underline-animation" routerLinkActive="active">
+            <a 
+              class="nav-link" 
+              routerLink="/hobbys"
+              (click)="onNavItemClick()">
+              {{ text('navigation.service-3') }}
+            </a>
+          </li>
+
+          <!-- CONTACT -->
+          <li class="nav-item hover-underline-animation" routerLinkActive="active">
+            <a 
+              class="nav-link" 
+              routerLink="/contact"
+              (click)="onNavItemClick()">
+              {{ text('navigation.contact') }}
+            </a>
+          </li>
+
+        </ul>
+      </div>
+       <!-- NAVBAR COLLAPSE -->
+
+    </div>
+  </nav>
+   <!-- NAVBAR -->
+   
+</ng-container>

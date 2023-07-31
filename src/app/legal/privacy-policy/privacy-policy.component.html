@@ -1,0 +1,37 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+    <!-- PRIVACY POLICY OUTER -->
+    <div class="outer">
+
+        <!-- PRIVACY POLICY INNER -->
+        <div class="inner flex y-flex f-align-start">
+
+            <!-- PRIVACY POLICY -->
+            <div id="privacy-policy" class="section y-flex f-align-start">
+                <div class="medium-title">{{ text('legal.privacy-policy.name') }}</div>
+
+                <!-- PERSONAL DATA -->
+                <div class="fs-xs">
+                    <div class="fw-medium">{{ text('legal.privacy-policy.personal-data-key') }}</div>
+                    <div class="block-text fw-lighter">{{ text('legal.privacy-policy.personal-data-value') }}</div>
+                </div>
+                
+                <!-- TRACKING -->
+                <div class="fs-xs">
+                    <div class="fw-medium">{{ text('legal.privacy-policy.tracking-key') }}</div>
+                    <div class="block-text fw-lighter">{{ text('legal.privacy-policy.tracking-value') }}</div>
+                </div>
+
+            </div>
+            <!-- PRIVACY POLICY -->
+
+            <div class="whitespace"></div>
+
+        </div>
+        <!-- PRIVACY POLICY INNER -->
+        
+    </div>
+    <!-- PRIVACY POLICY OUTER -->
+
+</ng-container>

@@ -1,0 +1,188 @@
+@use "src/styles/index" as *;
+
+.intro {
+
+    margin: auto;
+    
+    max-width: 28em;
+    padding: 3.5em;
+
+    .welcome-title {
+        font-size: $fs-l;
+        line-height: 1.1em;
+        font-weight: $fw-thick;
+        padding-bottom: 0.2em;
+    }
+
+    .welcome-text {
+        // font-size: $fs-m;
+        font-size: 1.2em;
+        font-weight: $fw-medium;
+        max-width: 50em;
+    }
+
+    .pill-btn {
+        background: $dark-gradient;
+        color: $white;
+
+        // Very bad performance - problems occur only on the first slide of carousel, safari 
+        // background: linear-gradient(90deg, $gray-300 0%, $dark-gradient-color-1 50%, $gray-300 100%);
+        background: linear-gradient(90deg, $primary-gradient-color-1 0%, $primary-gradient-color-2 50%, $primary-gradient-color-1 100%);
+        background-size: 200%;
+        animation: bg-glow 2s ease-out infinite;
+
+        // 'Null-Transform-Hack' solves performance Problem 
+        // https://stackoverflow.com/questions/13176746/css-keyframe-animation-cpu-usage-is-high-should-it-be-this-way
+        transform: translateZ(0);
+
+        transition: 200ms;
+
+        &:hover {
+            background: linear-gradient(90deg, $primary-gradient-color-1 0%, $primary-gradient-color-2 50%, $primary-gradient-color-1 100%);
+            background-size: 200%;
+            animation: bg-glow 1s ease-out infinite;
+        }
+    }
+}
+
+.service-img {
+
+    height: 16em;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        max-height: 100%;
+        min-width: 100%;
+    }
+
+    @include md {
+        height: 100%;
+    }
+}
+
+.items {
+
+    width: 100%;
+    max-width: 100%;
+
+    background: rgb($primary-gradient-color-2, 0.2);
+    gap: 0;
+
+    .item {
+
+        padding: 0em 2em;
+        padding-top: calc(5em + 5vw);
+    
+        width: 100%;
+        background: url('/assets/graphics/graywaves-1.svg');
+        background-size: max(100%, 50em);
+        // background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+
+        &:nth-child(1) {
+            background: none;
+            padding-top: 5em;
+        }
+    
+        &:nth-child(2n) {
+    
+            background: url('/assets/graphics/graywaves-2.svg');
+            background-size: max(100%, 50em);
+            background-repeat: no-repeat;
+            background-position: top;
+            
+            .content {
+                // margin-right: 5em;
+    
+                // @include lg {
+                //     text-align: end;
+                //     flex-direction: row-reverse;
+                // }
+    
+    
+                .icon-blob::before {
+                    transform: rotate(200deg) scaleY(-1);
+                }
+            }
+        }
+        
+        .content {
+    
+            @include lg {
+                gap: 5em;
+            }
+    
+            .text {
+                max-width: 35em;
+            }
+    
+            .icon-blob {
+    
+                position: relative;
+    
+                // Flex
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                // Size and spacing
+                font-size: 2.5em;
+    
+                height: 3.5em;
+                width: 3.5em;
+                
+                // Icon color
+                // color: rgb($black, 0.7);
+                color: rgb($black, 1.0);
+    
+                &:before {
+    
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    background: url('/assets/graphics/ssshape.svg') 0 0 repeat;
+                }
+    
+                &.icon-blob:nth-child(0){
+                    transform: rotate(90deg);
+                }
+            }
+
+            &.contact-item {
+                // spacing
+                gap: 1em;
+
+                // font
+                text-align: center;
+
+                // call-to-action-button 
+                .cta-btn {
+                    color: $black;
+                    border: 1px solid $black;
+    
+                    margin-bottom: 5em;
+                    gap: 0;
+    
+                    &:hover {
+                        background: rgb($black, 0.1);
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@keyframes bg-glow {
+
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}

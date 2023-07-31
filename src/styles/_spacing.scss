@@ -1,0 +1,64 @@
+@use './variables';
+
+/* CURRENTLY UNUSED */
+
+/* attr names for which classes should be generated */
+$spacing-attr-names: 'padding', 'margin';
+
+/* padding, margin 
+ *
+ * 
+ *
+ *
+ */
+
+@each $attr in $spacing-attr-names {
+    @for $i from 1 through variables.$max-level {
+
+        $val: calc(#{$i} * #{variables.$unit});
+
+        .#{$attr}-#{$i} {
+
+            #{$attr}: #{$val};
+
+        }
+        
+        .y-#{$attr}-#{$i} {
+
+            #{$attr}-top: #{$val};
+            #{$attr}-bottom: #{$val};
+
+        }
+
+        .x-#{$attr}-#{$i} {
+
+            #{$attr}-left: #{$val};
+            #{$attr}-right: #{$val};
+
+        }
+
+        .top-#{$attr}-#{$i} {
+
+            #{$attr}-top: #{$val};
+
+        }
+
+        .bottom-#{$attr}-#{$i} {
+
+            #{$attr}-bottom: #{$val};
+
+        }
+
+        .left-#{$attr}-#{$i} {
+
+            #{$attr}-left: #{$val};
+
+        }
+
+        .right-#{$attr}-#{$i} {
+
+            #{$attr}-right: #{$val};
+
+        }
+    }   
+}

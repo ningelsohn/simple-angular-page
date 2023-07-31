@@ -1,0 +1,45 @@
+@mixin tilt($top-tilt, $bottom-tilt) {
+
+    // init params
+    $top-left-tilt: 0vw;
+    $top-right-tilt: 0vw;
+    $bottom-left-tilt: 0vw;
+    $bottom-right-tilt: 0vw;
+
+    // if top-tilt is positive, tilt to left
+    @if $top-tilt > 0 {
+        $top-left-tilt: $top-tilt;
+    } 
+
+    // if top-tilt is negative, tilt to right
+    @if $top-tilt < 0 {
+        $top-right-tilt: abs($top-tilt);
+    }
+
+    // if bottom-tilt is positive, tilt to left
+    @if $bottom-tilt > 0 {
+        $bottom-left-tilt: $bottom-tilt;
+    } 
+    
+    // if bottom-tilt is negative, tilt to right
+    @if $bottom-tilt < 0 {
+        $bottom-right-tilt: abs($bottom-tilt);
+    }
+
+    // set margin to account for tilt
+    // shifts upwards to match with other tilted elements: element with 5vw bottom tilt matches with following elements with 5vw top tilt
+    // additional 1em margin for spacing
+    // margin-top: calc(1em - abs($top-tilt));
+    // currently testing 0
+    margin-top: calc(0em - abs($top-tilt));
+
+    // padding to shift content downward, counters upward shift with margin
+    // additional 1em padding for aesthetics
+    padding-top: calc(1em + abs($top-tilt));
+
+    // analogous to padding top
+    padding-bottom: calc(1em + abs($bottom-tilt));
+
+    // 
+    clip-path: polygon(0 $top-left-tilt, 100% $top-right-tilt, 100% calc(100% - $bottom-left-tilt), 0 calc(100% - $bottom-right-tilt));
+}

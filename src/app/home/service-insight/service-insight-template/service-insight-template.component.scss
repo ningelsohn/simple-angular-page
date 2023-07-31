@@ -1,0 +1,75 @@
+@use "src/styles/index" as *;
+
+.title {
+    color: rgb($white, 0.8);
+    font-size: $fs-m;
+    font-weight: $fw-thick;
+    text-transform: uppercase;
+
+    .light {
+        font-weight: 100;
+    }
+}
+
+.items {
+    gap: 0;
+
+    .item {
+        text-align: start;
+        color: rgb($white, 0.8);
+        font-size: $fs-xs;
+        font-weight: 100 !important;
+    }
+}
+
+// .w-80 {
+//     // width: 80%;
+// }
+
+.icon {
+    padding-bottom: 1em;
+}
+
+// About Boxes | History & Philosophy
+.about {
+
+    // font
+    text-align: left;
+    line-height: 1.5em;
+
+    // spacing
+    padding: 5em 3em;
+
+    // background
+    &.history {
+        background: url('/../assets/img/books.jpg');
+        background-size: cover;
+    }
+
+    &.philosophy {
+        background: url('/../assets/img/structure.jpg');
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .content {
+        max-width: 26em;
+        color: rgb($black, 0.8);
+    }
+
+    .title {
+        font-size: $fs-m;
+        font-weight: $fw-thick;
+        text-transform: uppercase;
+
+        .light {
+            font-weight: 100;
+        }
+    }
+
+    .desc {
+        font-size: $fs-s;
+        font-weight: $fw-lighter;
+    }
+
+}

@@ -1,0 +1,138 @@
+<!-- Component dynamically translated with transloco: https://github.com/ngneat/transloco -->
+<ng-container *transloco="let text;">
+
+    <!-- OUTER -->
+    <div class="outer-base-layout">
+
+        <!-- INNER FLEX -->
+        <div class="inner-base-layout flex y-flex">
+
+            <!-- ROW -->
+            <div class="bl-row flex x-flex">
+
+                <!-- WELCOME BOX -->
+                <div class="bl-box">
+                    <div class="box-inner intro flex y-flex f-align-center" routerLink="/contact">
+                        <div class="content">
+                            <h4 class="welcome-title">{{ text('welcome.welcome-title-leading') }}<span class="special-font">{{ text('welcome.welcome-title-highlight') }}</span>{{ text('welcome.welcome-title-trailing') }}
+                            </h4>
+                            <p class="welcome-text">{{ text('welcome.welcome-text') }}</p>
+                            <button class="pill-btn btn-chevron">{{ text('contact.title') }}</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- WELCOME BOX -->
+
+                <!-- SERVICE CAROUSEL BOX -->
+                <div class="bl-box">
+                    <div class="box-inner services">
+                        <app-service-carousel></app-service-carousel>
+                    </div> 
+                </div>
+                <!-- SERVICE CAROUSEL BOX -->
+
+            </div>
+            <!-- ROW -->
+
+            <!-- ROW -->
+            <div class="bl-row flex x-flex x-flex-md-rev">
+
+                <!-- HISTORY BOX -->
+                <div class="bl-box">
+                    <div class="box-inner about history flex y-flex f-align-center">
+                        <div class="content">
+                            <h4 class="title"><span class="light">{{ text('about.us') }}</span>  ·  {{ text('about.history.title') }}</h4>
+                            <p class="desc">{{ text('about.history.desc') }}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- HISTORY BOX -->
+
+                <!-- INSIGHT BOX -->
+                <div class="bl-box">
+                    <div class="box-inner products flex y-flex f-align-center" routerLink="/about-me">
+                        <div class="content">
+                            <app-service-1-insight></app-service-1-insight>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSIGHT BOX -->
+
+            </div>
+            <!-- ROW -->
+
+            <!-- ROW -->
+            <div class="bl-row flex x-flex lg-y-flex">
+
+                <!-- PHILOSOPHY BOX -->
+                <div class="bl-box">
+                    <div class="box-inner about philosophy flex y-flex f-align-center">
+                        <div class="content">
+                            <h4 class="title"><span class="light">{{ text('about.us') }}</span>  ·  {{ text('about.philosophy.title') }}</h4>
+                            <p class="desc">{{ text('about.philosophy.desc') }}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- PHILOSOPHY BOX -->
+
+                <!-- INSIGHT BOX -->
+                <div class="bl-box">
+                    <div class="box-inner products flex y-flex f-align-center" routerLink="/skills">
+                        <div class="content">
+                            <app-service-2-insight></app-service-2-insight>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSIGHT BOX -->
+
+            </div>
+            <!-- ROW -->
+
+            <!-- ROW -->
+            <div class="bl-row flex x-flex lg-y-flex x-flex-md-rev">
+
+               <!-- CONTACT BOX -->
+               <div class="bl-box">
+                    <div class="box-inner contact flex y-flex f-align-center">
+                        <div class="content">
+                            <h4 class="title">{{ text('contact.title') }}</h4>
+                            <p class="info">{{ text('contact.info') }}</p>
+                            <div class="flex x-flex plain-infos">
+                                <div class="contact-info">
+                                    <button class="outline-btn pill-btn btn-phone"><a href="{{ 'tel:' + phone }}">{{ text('contact.call-us') }}</a></button>
+                                    <!-- <i class="copy-icon fa-regular fa-copy"></i> -->
+                                </div>
+                                <!-- <div class="contact-info">
+                                    <button class="contact-btn pill-btn btn-mobile"><a href="{{ 'tel:' + mobile }}">Mobile</a></button>
+                                    <i class="copy-icon fa-regular fa-copy"></i>
+                                </div> -->
+                                <div class="contact-info">
+                                    <button class="outline-btn pill-btn btn-mail"><a href="{{ 'mailto:' + mail }}">{{ text('contact.mail-us') }}</a></button>
+                                    <!-- <i (click)="copyMail()" class="copy-icon fa-regular fa-copy"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTACT BOX -->
+
+                <!-- INSIGHT BOX -->
+                <div class="bl-box">
+                    <div class="box-inner products flex y-flex f-align-center" routerLink="/hobbys">
+                        <div class="content">
+                            <app-service-3-insight></app-service-3-insight>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSIGHT BOX -->
+
+            </div>
+            <!-- ROW -->
+
+        </div>
+        <!-- INNER FLEX -->
+
+    </div>
+    <!-- OUTER -->
+
+</ng-container>
